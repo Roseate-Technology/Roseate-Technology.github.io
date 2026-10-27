@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roseate Technology LLC</title>
+<meta name="description" content="Roseate Technology LLC develops signal conditioning hardware, EtherCAT subdevices and compact real-time I/O for industrial measurement and data acquisition.">
+<style>
+  :root {
+    --bg: #fbf8f7;
+    --surface: #ffffff;
+    --ink: #1f1a1c;
+    --muted: #5d5458;
+    --rule: #e6dcdf;
+    --accent: #b8476a;
+    --accent-ink: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161214;
+      --surface: #1f1a1c;
+      --ink: #f2ecee;
+      --muted: #b3a8ad;
+      --rule: #3a3135;
+      --accent: #e48aa6;
+      --accent-ink: #1f1a1c;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+  header { border-bottom: 1px solid var(--rule); }
+  nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; flex-wrap: wrap; }
+  .brand { font-weight: 700; letter-spacing: 0.02em; color: var(--ink); text-decoration: none; display: flex; align-items: center; gap: 10px; }
+  .brand svg { flex: none; }
+  nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a:hover { color: var(--accent); }
+  .hero { padding: 72px 0 56px; }
+  .hero h1 { font-size: clamp(30px, 5vw, 46px); line-height: 1.15; margin: 0 0 18px; max-width: 18ch; }
+  .hero p { color: var(--muted); font-size: 19px; max-width: 60ch; margin: 0 0 28px; }
+  .btn { display: inline-block; background: var(--accent); color: var(--accent-ink); padding: 11px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; }
+  section { padding: 48px 0; border-top: 1px solid var(--rule); }
+  h2 { font-size: 26px; margin: 0 0 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+  .card { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 22px; }
+  .card h3 { margin: 0 0 8px; font-size: 18px; }
+  .card p { margin: 0; color: var(--muted); font-size: 16px; }
+  .about p { max-width: 68ch; color: var(--muted); }
+  dl { display: grid; grid-template-columns: max-content 1fr; gap: 8px 20px; margin: 0; }
+  dt { font-weight: 600; }
+  dd { margin: 0; color: var(--muted); }
+  dd a { color: var(--accent); }
+  footer { border-top: 1px solid var(--rule); padding: 24px 0 40px; color: var(--muted); font-size: 14px; }
+  @media (max-width: 520px) {
+    nav ul { gap: 14px; }
+    dl { grid-template-columns: 1fr; gap: 2px; }
+    dd { margin-bottom: 10px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#top" aria-label="Roseate Technology home">
+        <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+          <circle cx="14" cy="14" r="13" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M3 14 C 7 6, 10 6, 14 14 S 21 22, 25 14" fill="none" stroke="#b8476a" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        Roseate Technology
+      </a>
+      <ul>
+        <li><a href="#capabilities">Capabilities</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <h1>Signal conditioning and real-time I/O for industrial measurement</h1>
+    <p>Roseate Technology LLC designs compact hardware and firmware that connect sensors and actuation devices to modern control networks, for high-speed monitoring and general data acquisition.</p>
+    <a class="btn" href="#contact">Get in touch</a>
+  </div>
+
+  <section id="capabilities">
+    <div class="wrap">
+      <h2>Capabilities</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Signal conditioning</h3>
+          <p>Analog front ends for industrial sensors: excitation, amplification, filtering and precision conversion for clean, high-bandwidth measurements.</p>
+        </div>
+        <div class="card">
+          <h3>EtherCAT subdevices</h3>
+          <p>Deterministic EtherCAT interfaces that put conditioned measurements and outputs onto the network with tight timing.</p>
+        </div>
+        <div class="card">
+          <h3>Compact embedded I/O</h3>
+          <p>Small-form-factor boards, including mikroBUS add-on boards and BeagleBone capes, for prototyping and integration.</p>
+        </div>
+        <div class="card">
+          <h3>Embedded firmware</h3>
+          <p>Real-time firmware for microcontroller platforms, built alongside the hardware for data acquisition and control applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <p>Roseate Technology is a small engineering company based in Minnesota. We focus on practical, well-documented hardware for engineers who need dependable measurements and real-time I/O in test, monitoring and industrial automation systems.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <dl>
+        <dt>Email</dt>
+        <dd><a href="mailto:j.rosenow@roseatetech.com">j.rosenow@roseatetech.com</a></dd>
+        <dt>Location</dt>
+        <dd>Zimmerman, Minnesota, USA</dd>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="yr">2026</span> Roseate Technology LLC. All rights reserved.</div>
+</footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
