@@ -69,6 +69,9 @@
   .card { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 22px; }
   .card h3 { margin: 0 0 8px; font-size: 18px; color: var(--accent); }
   .card p { margin: 0; color: var(--muted); font-size: 16px; }
+  .stage { font-family: "Barlow Semi Condensed", "Arial Narrow", sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--copper); margin-bottom: 6px; }
+  .request { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
+  .request p { color: var(--muted); max-width: 60ch; margin: 0; }
   .about p { max-width: 68ch; color: var(--muted); }
   dl { display: grid; grid-template-columns: max-content 1fr; gap: 8px 20px; margin: 0; }
   dt { font-weight: 600; }
@@ -101,6 +104,7 @@
       </a>
       <ul>
         <li><a href="#capabilities">Capabilities</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -180,6 +184,40 @@
           <p>DIN-rail modules for the control cabinet first, then sealed, IP-rated housings for mounting at the machine, and bespoke mechanical packaging designed in-house to your requirements.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+
+  <section id="roadmap">
+    <div class="wrap">
+      <h2>Roadmap</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="stage">Available first</div>
+          <h3>Vibration node</h3>
+          <p>IEPE/ICP accelerometer input, Modbus&reg; TCP to your PLC or SCADA, and the web commissioning interface with scope, DVM, FFT and self-test.</p>
+        </div>
+        <div class="card">
+          <div class="stage">Next</div>
+          <h3>Temperature</h3>
+          <p>Thermocouple input module, completing vibration and temperature monitoring for bearings.</p>
+        </div>
+        <div class="card">
+          <div class="stage">Planned</div>
+          <h3>More connections and inputs</h3>
+          <p>OPC UA&reg; first, then EtherCAT&reg;, PROFINET&reg;, CAN and CAN-FD, MEMS accelerometers, full-bandwidth streaming and sealed housings. Your requests set the order.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="request">
+    <div class="wrap request">
+      <div>
+        <h2>Tell us what you need</h2>
+        <p>Which inputs, which connection to your systems, how many channels, and where it mounts. Your answers decide what we build next.</p>
+      </div>
+      <a class="btn" href="mailto:j.rosenow@roseatetech.com?subject=Roseate%20product%20request">Send your request</a>
     </div>
   </section>
 
