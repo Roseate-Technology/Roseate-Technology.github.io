@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Roseate Technology LLC | Signal Conditioning and Data Acquisition</title>
+<title>Roseate Technology LLC | Industrial IoT Signal Conditioning and Data Acquisition</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Barlow:wght@400;500;600&display=swap">
-<meta name="description" content="Roseate Technology LLC develops signal conditioning and data reduction hardware that turns industrial sensor signals into results published to SCADA, PLC and other supervisory systems.">
+<meta name="description" content="Roseate Technology LLC builds Industrial IoT signal conditioning, data acquisition and data reduction nodes that run your algorithms at the sensor and publish results to SCADA, PLCs and real-time controllers.">
 <style>
   :root {
     --bg: #fbf8f7;
@@ -73,6 +73,8 @@
   .request { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
   .request p { color: var(--muted); max-width: 60ch; margin: 0; }
   .about p { max-width: 68ch; color: var(--muted); }
+  .hero .hero-text p.hero-tag, .hero-text p.hero-tag { margin: -4px 0 14px; font-family: "Barlow Semi Condensed", "Arial Narrow", sans-serif; font-weight: 600; font-size: 24px; line-height: 1.25; color: var(--accent); }
+  .about .dedication { margin: 28px 0 6px; font-size: 18px; color: var(--accent); }
   dl { display: grid; grid-template-columns: max-content 1fr; gap: 8px 20px; margin: 0; }
   dt { font-weight: 600; }
   dd { margin: 0; color: var(--muted); }
@@ -115,8 +117,9 @@
 <main id="top">
   <div class="wrap hero">
     <div class="hero-text">
-    <h1>Signal conditioning, data acquisition and data reduction for industrial monitoring</h1>
-    <p>Roseate Technology LLC designs hardware and firmware that condition sensor signals, reduce them to meaningful measurements, and publish the results to SCADA, PLC and other supervisory control systems.</p>
+    <h1>Industrial IoT signal conditioning, data acquisition and data reduction</h1>
+    <p class="hero-tag">With your algorithms running at the sensor.</p>
+    <p>Roseate Technology LLC designs hardware and firmware that condition sensor signals, reduce them to meaningful measurements, and publish the results to SCADA, PLCs and real-time controllers, inside the controller&rsquo;s cycle.</p>
     <a class="btn" href="#contact">Get in touch</a>
   </div>
     <svg class="hero-art" viewBox="488 8 464 272" role="img" aria-label="Three input signals, one a decaying wave, flowing into the Roseate rose above a Gaussian spectrum">
@@ -165,7 +168,7 @@
       <div class="grid">
         <div class="card">
           <h3>Signal conditioning</h3>
-          <p>Analog front ends for industrial sensors: excitation, amplification, filtering and precision conversion for clean, high-bandwidth measurements.</p>
+          <p>Analog front ends for industrial sensors: excitation, amplification, filtering and precision conversion for clean, high-bandwidth measurements. Reads IEEE 1451.4 TEDS sensor IDs to set up channels automatically and report each sensor&rsquo;s identity to your systems.</p>
         </div>
         <div class="card">
           <h3>Data reduction</h3>
@@ -177,7 +180,7 @@
         </div>
         <div class="card">
           <h3>Publishing to supervisory systems</h3>
-          <p>Real-time live data over EtherCAT&reg; and PROFINET&reg; for use by your real-time supervisory systems, plus Modbus&reg; TCP and OPC UA&reg; for SCADA, PLC and plant historian systems. All data is time-synchronized and can be timestamped from IEEE 1588 PTP or a plant or lab reference clock, so measurements line up across every node and system.</p>
+          <p>The node can act as a real-time device in your controller&rsquo;s EtherCAT&reg; or PROFINET&reg; network, delivering results every cycle. Modbus&reg; TCP and OPC UA&reg; serve SCADA, PLC and plant historian systems, and MQTT with Sparkplug B serves IIoT platforms. All data is time-synchronized and can be timestamped from IEEE 1588 PTP or a plant or lab reference clock, so measurements line up across every node and system.</p>
         </div>
         <div class="card">
           <h3>Packaging</h3>
@@ -225,6 +228,8 @@
     <div class="wrap">
       <h2>About</h2>
       <p>Roseate Technology is a small engineering company based in Minnesota. We focus on practical, well-documented hardware for engineers who need dependable measurements from the equipment they monitor, delivered to the systems they already use.</p>
+      <h3 class="dedication">Lillian</h3>
+      <p>Our firmware is named Lillian, after Lillian &ldquo;Lil&rdquo; Rosenow, the founder&rsquo;s mother. She was a switchboard operator who spent her working life connecting each call to the person it was meant for. Lillian does the same job for signals: it takes what the sensors say and connects it to the systems and people who need it.</p>
     </div>
   </section>
 
